@@ -54,50 +54,55 @@
 		padding: 15px;
 		text-align: justify;
 		}
+	    
+	.row::after {
+		content: "";
+		display: table;
+		clear: both;
+		}
+ 
+	/* stopka */
 	.footer {
 		text-align: center;
 		background: #ddd;
 		position: absolute;
 		bottom: 0;
 		width: 100%;
-		height: 22px;
+		height: 36px;
 	}
 
 	.footer a {
-		    float: left;
-		    display: block;
-		    color: blue;
-		    text-align: center;
-		    text-decoration: none;
-	            padding: 14px;
+		float: left;
+		color: blue;
+		text-align: center;
+		text-decoration: none;
+	        padding: 14px;
 	    }
+	
+	body{
+	position: relative;
+	}
 	    
-
-	    
-	.row::after {
-	content: "";
-	display: table;
-	clear: both;
+	body::after {
+	content: '';
+	display: block;
+	height: 22px;
 	}
 
+	/* obraz */
 	#img1 {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 		width: 50%;
 		}
-body{
-	position: relative;
-	}
-body::after {
-	content: '';
-	display: block;
-	height: 22px;
-}
-h1 {
+	    
+	/* nagłówki */
+	h1 {
 	font-size: 30px;
 	text-decoration-thickness: 10px;
-}
+	}
+	    
     </style>
 </head>   
 <body>
