@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokojowaOkupacjaWroclaw</title>
-    <style>
+  <style>
 	/* nagłówek */
 	    .header {
 		    background-color: #f1f1f1;
-		    padding: 20px;
+		    padding: 2vw;
 		    text-align: center;
 	    }
-		
+
 	    /* pasek nawigacji */
 	    .topnav {
+	    margin: 0px;
 		overflow: hidden;
 		background-color: #333;
 	    }
-	    
+
 	    .topnav a {
 		    float: left;
 		    display: block;
@@ -33,56 +34,83 @@
 	    }
 
 	    /* layout kolumn */
-	
-	    
-       	 .column.middle { 
-		margin-left: 20vw;
-		margin-right: 5vw;
-		font-size: 22px;
+
+
+       	 .column.middle {
+		font-size: 12px;
 		font-family: "serif";
-		line-height: 36px;
-		width: 600px;
+		/*line-height: 36px;*/
 		text-align: justify;
-		 float: left;
+		padding: 2vw;
+		/* float: left;*/
                 }
-	    
+	    .column.middle h1{
+			text-align: center;
+			font-size: 16px;
+	    }
 	.column.side {
-		width: 400px;
-		border: 3px solid #73AD21;
-		margin-top: 15px;
-		padding: 15px;
+		width: 92vw;
+		border: 1vw solid #73AD21;
+		margin: 1vw;
+		padding: 2vw;
 		text-align: justify;
-		float: right;
-		margin-right: 50px;
+		/*float: right;*/
+		/*margin-right: 50px;*/
 		}
-	    
+
+	.column.side h1{
+		text-align: center;
+	}
+
 	.row::after {
 		content: "";
 		display: table;
 		clear: both;
 		}
- 
+
 	/* stopka */
 	.footer {
-		background: #ddd;
-		position: absolute;
-		bottom: 0;
+		background-color: #ddd;
+/* 		color: white; */
+		text-align: center;
+		padding: 20px 0;
+		float: right;
+		position: relative;
 		width: 100%;
-		height: 48px;
+		bottom: 0;
 	}
 
+
 	.footer a {
-		float: left;
 		color: blue;
-		text-decoration: none;
-	        padding: 14px;
-		margin-top: 0;
-	    }
-	
-	body{
-	position: relative;
+		text-decoration: none; /
+		margin: 0 10px;
+		display: inline-block;
+		padding: 10px;
 	}
-	    
+
+	.footer a:hover {
+		text-decoration: underline;
+	}
+
+
+	@media (max-width: 600px) {
+		.footer {
+			padding: 10px 0;
+			font-size: 14px;
+		}
+
+		.footer a {
+			display: block;
+			margin: 10px 0;
+		}
+	}
+
+	body{
+		position: relative;
+		margin: 0px;
+	}
+
 	body::after {
 	content: '';
 	display: block;
@@ -96,44 +124,49 @@
 		margin-right: auto;
 		width: 50%;
 		}
-	    
+
 	/* nagłówki */
 	h1 {
 	font-size: 30px;
 	text-decoration-thickness: 10px;
 	}
-	     @media only screen and (max-width: 800px) {
+	/*
+ 	 @media only screen and (max-width: 800px) {
 		 .header {
-			    width: 800px;
+			width: 800px;
 		}
-	    } 
-	    
-	 @media only screen and (max-width: 850px) {
+	}*/
+    /*
+	 @media only screen  {
 		.topnav, .footer  {
-			 clear: left;
-			    width: 850px;
+			clear: left;
+			width: 850px;
 		}
-	    } 
-	    @media only screen and (max-width: 850px) {
+	}
+	*/
+
+	@media only screen and (min-width: 800px){
 		.column.middle  {
-			 clear: left;
-			    width: 740px;
-			    margin-right: 55px;
-           		    margin-left: 55px;
+			clear: left;
+			font-size: 20px;
 		}
-	    } 
-	    
-            @media only screen and (max-width: 850px) {
+
+		.column.middle h1{
+			font-size: 22px;
+		}
+
 		.column.side  {
-			 
-			   width: 740px;
-			margin-right: -445px;
+			float: right;
+			width: 35vw;
+			border: 0.7vw solid #73AD21;
+			/*margin-right: -445px;*/
 			clear: right;
-			  
+
 		}
-	    } 
-	    
-	    
+
+	}
+
+
     </style>
 </head>   
 <body>
@@ -144,7 +177,7 @@
 <div class="topnav">
 <a href=https://pokojowaokupacjawroclaw.github.io/STRONA.html#>Strona Główna</a>
 <a href=https://pokojowaokupacjawroclaw.github.io/english.html>ENG</a>
-<a href=https://linktr.ee/solidarnosciowkawro?utm_source=linktree_admin_share&fbclid=PAZXh0bgNhZW0CMTEAAaaXVS8cxMzoecV3R9u6N0ASg88kyApc6FhrGrrBL2x-Z4Oj7bojpuAcO-I_aem_ZmFrZWR1bW15MTZieXRlcw>Linktree</a>
+<a href=https://pokojowaokupacjawroclaw.github.io/linki.html>Przydatne linki</a>
 <a href="#">Regulamin</a>
 </div>
 	<div class= "column side">
@@ -170,19 +203,19 @@ więcej dla nikogo.</p>
 <div class="row">
 <div class="column middle">
 	<h1>PRZYDATNE LINKI</h1>
-	<p>Protesty studenckie - kanały informacyjne:
-    - Ogólnopolski Komitet Strajkowy (Kraków) (Instagram): https://www.instagram.com/akademia_dla_palestyny/
-    - Studenci działający we Wrocławiu (Instagram): https://www.instagram.com/solidarnosciowkawro/
-    - Studenci działający w Warszawie (Instagram): https://www.instagram.com/uw_z_palestyna/
-    - Studenci działający w Poznaniu (Instagram): https://www.instagram.com/sjpinpoznan/
-    - Studenci działający w Trójmieście (Instagram): https://www.instagram.com/trojmiasto_dla_palestyny/
-    - Studenci działający w Lublinie (Instagram): https://www.instagram.com/umcs.dla.palestyny/
-    - Studenci działający w Łodzi (Instagram): https://www.instagram.com/sjp_lodz/
-    - Studenci działający w Bielsku-Białej (Instagram): https://www.instagram.com/bielskobialazpalestynczykami/
-    - Studenci działający w Toruniu (Facebook):  https://www.facebook.com/profile.php?id=61561221057524&locale=pl_PL
+	<p>Protesty studenckie - kanały informacyjne:<br>
+    - Ogólnopolski Komitet Strajkowy (Kraków) (Instagram): <a href=https://www.instagram.com/akademia_dla_palestyny/ >https://www.instagram.com/akademia_dla_palestyny/</a><br>
+    - Studenci działający we Wrocławiu (Instagram): <a href=https://www.instagram.com/solidarnosciowkawro/ >https://www.instagram.com/solidarnosciowkawro/</a><br>
+    - Studenci działający w Warszawie (Instagram): <a href=https://www.instagram.com/uw_z_palestyna/ >https://www.instagram.com/uw_z_palestyna/</a><br>
+    - Studenci działający w Poznaniu (Instagram): <a href=https://www.instagram.com/uw_z_palestyna/>https://www.instagram.com/uw_z_palestyna/</a><br>
+    - Studenci działający w Trójmieście (Instagram): <a href=https://www.instagram.com/uw_z_palestyna/>https://www.instagram.com/uw_z_palestyna/</a><br>
+    - Studenci działający w Lublinie (Instagram): <a href=https://www.instagram.com/umcs.dla.palestyny/>https://www.instagram.com/umcs.dla.palestyny/</a><br>
+    - Studenci działający w Łodzi (Instagram): <a href=https://www.instagram.com/sjp_lodz/>https://www.instagram.com/sjp_lodz/</a><br>
+    - Studenci działający w Bielsku-Białej (Instagram): <a href=https://www.instagram.com/bielskobialazpalestynczykami/>https://www.instagram.com/bielskobialazpalestynczykami/</a><br>
+    - Studenci działający w Toruniu (Facebook):  <a href=https://www.facebook.com/profile.php?id=61561221057524&locale=pl_PL>https://www.facebook.com/profile.php?id=61561221057524&locale=pl_PL</a><br><br>
     
     Inne kanały informacyjne:
-    - https://www.instagram.com/migracjapolska/
+    - <a href=https://www.instagram.com/migracjapolska/>https://www.instagram.com/migracjapolska/</a><br>
     
 
 	</p>
