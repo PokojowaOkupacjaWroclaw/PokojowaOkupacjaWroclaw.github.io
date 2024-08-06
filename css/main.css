@@ -10,12 +10,6 @@ body p {
     line-height: 1.5em;
 }
 
-img {
-    width: 10%;
-    margin-top: 0px;
-    margin-right: 1em;
-}
-
 nav ul {
     list-style-type: none;
     padding: 0;
