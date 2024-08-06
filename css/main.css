@@ -1,3 +1,15 @@
+body {
+    font-family: monospace;
+    font-size: 1rem;
+    color: #210;
+    background: #ddd;
+    padding: 2.5%;
+}
+
+body p {
+    line-height: 1.5em;
+}
+
 header img {
     display: float;
     width: 10%;
@@ -12,18 +24,6 @@ nav ul {
 
 nav ul li {
     display: inline;
-}
-
-body {
-    font-family: monospace;
-    font-size: 1rem;
-    color: #210;
-    background: #ddd;
-    padding: 2.5%;
-}
-
-body p {
-    line-height: 1.5em;
 }
 
 h1, h3 {
