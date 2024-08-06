@@ -1,0 +1,60 @@
+h1 img {
+    display: float;
+    width: 20%;
+    margin-top: 0px;
+    margin-right: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+body {
+    font-family: monospace;
+    font-size: 1rem;
+    color: #210;
+    background: #ddd;
+    padding: 2.5%;
+}
+
+body p {
+    line-height: 1.5em;
+}
+
+h1, h3 {
+    color: #b04;
+}
+
+h2, h4 {
+    color: #163;
+}
+
+a {
+    color: #79c;
+}
+
+dl, ol, ul {
+    line-height: 1.5em;
+}
+
+li::marker {
+    color: #b04;
+}
+
+strong, b, em {
+    color: #b04;
+}
+
+:lang(ara) {
+    font-size: 1.5em;
+}
+
+hr {
+    margin-top: 2em;
+    margin-bottom: 2em
+}
