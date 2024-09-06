@@ -67,3 +67,7 @@ hr {
 article img {
   width: 50%;
 }
+
+ol.references {
+  list-style-type: none;
+}
