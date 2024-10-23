@@ -68,6 +68,10 @@ article img {
   width: 50%;
 }
 
-ol.references {
+.references {
   list-style-type: none;
+}
+
+.references p {
+    text-align: left;
 }
